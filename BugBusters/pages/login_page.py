@@ -2,7 +2,6 @@ from BugBusters.pages.base_page import BasePage
 from dotenv import load_dotenv
 from playwright.sync_api import expect
 
-# Загружаем переменные из .env файла
 load_dotenv()
 
 
@@ -22,7 +21,6 @@ class LoginPage(BasePage):
 
 
     def login(self, email, password):
-        # Ждем появления поля, чтобы тест не упал от скорости
         self.email_input.wait_for(state="visible")
         self.email_input.fill(email)
         self.password_input.fill(password)

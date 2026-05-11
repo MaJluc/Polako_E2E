@@ -4,7 +4,6 @@ from dotenv import load_dotenv
 
 from BugBusters.data.constants import Constants
 
-# Загружаем переменные окружения из .env файла
 load_dotenv(dotenv_path=os.path.join(os.path.dirname(os.path.dirname(__file__)), '.env'))
 
 from BugBusters.pages.login_page import LoginPage
@@ -14,8 +13,6 @@ from BugBusters.pages.purchase_page import PurchasePage
 from BugBusters.pages.event_pages import EventCreatePage, EventEditPage
 from BugBusters.pages.profile_page import ProfilePage
 
-
-# OopCompanion:suppressRename
 
 class App:
     def __init__(self, page):
