@@ -1,6 +1,9 @@
 from BugBusters.pages.base_page import BasePage
 
 
+# OopCompanion:suppressRename
+
+
 class EventBasePage(BasePage):
     def __init__(self, page):
         super().__init__(page)

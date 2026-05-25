@@ -29,7 +29,7 @@ class LoginPage(BasePage):
 
 
 
-    def should_be_link_to_profile(self):
+    def should_have_profile_link(self):
         expect(self.profile_link).to_be_visible()
 
 

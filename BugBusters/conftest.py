@@ -14,10 +14,14 @@ from BugBusters.pages.event_pages import EventCreatePage, EventEditPage
 from BugBusters.pages.profile_page import ProfilePage
 
 
+# OopCompanion:suppressRename
+
+
 class App:
     def __init__(self, page):
         self.page = page
         self.auth = LoginPage(page)
+        self.data = Constants
         self.registration = RegistrationPage(page)
         self.personal_info = PersonalInfoPage(page)
         self.purchases = PurchasePage(page)
